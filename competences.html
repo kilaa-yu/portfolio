@@ -6,55 +6,75 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header>
-  <nav class="navbar">
-    <a href="index.html" class="logo">MonPortfolio</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="competences.html" class="active">Compétences</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<div class="wrapper">
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">MonPortfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="competences.html" class="active">Compétences</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-  <section class="competences-section">
-    <h1>Compétences acquises en BUT Informatique</h1>
+  <main>
+    <section class="competences-section">
+      <h1>Compétences acquises en BUT Informatique</h1>
 
-    <article class="competence-block">
-      <h2>Développement Web</h2>
-      <p>
-        Apprentissage du HTML, CSS, JavaScript, Frameworks, etc.
-        Références :
-        <a href="projet1.html">Projet 1</a>,
-        <a href="projet2.html">Projet 2</a>
-      </p>
-    </article>
+      <!-- Accordéon global -->
+      <div class="accordion">
+        <!-- Compétence 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Compétence 2</button>
+          <div class="accordion-content">
+            <h3>AC 2.1 - Choisir des structures de données complexes adaptées au problème</h3>
+            <p>
+              Pour cette compétence, je peux mentionner le cours "Développement Efficace"
+              du Semestre 3 (code : R3.02). Dans ce cours, nous avons étudié en détail diverses
+              structures de données complexes telles que les arbres, les heaps et les listes.
+              ...
+            </p>
 
-    <article class="competence-block">
-      <h2>Administration Systèmes & Réseaux</h2>
-      <p>
-        Installation et configuration de serveurs, gestion de VLAN, sécurité réseau...
-        Références : <a href="projet3.html">Projet 3</a>
-      </p>
-    </article>
+            <h3>AC 2.2 - Utiliser des techniques algorithmiques adaptées pour des problèmes complexes</h3>
+            <p>
+              Également dans le cadre du cours "Développement Efficace" du Semestre 3
+              (code : R3.02), j'ai eu l'opportunité d'apprendre et de mettre en pratique diverses
+              techniques algorithmiques pour résoudre des problèmes complexes.
+              ...
+            </p>
+          </div>
+        </div>
 
-    <article class="competence-block">
-      <h2>Base de Données</h2>
-      <p>
-        Conception, requêtes SQL, optimisation...
-        Références : <a href="projet4.html">Projet 4</a>
-      </p>
-    </article>
+        <!-- Compétence 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Compétence 5</button>
+          <div class="accordion-content">
+            <!-- Insère ici les AC liés à la compétence 5 -->
+            <p>[AC 5.1, AC 5.2, etc. - Ton texte justifiant chaque acquis]</p>
+          </div>
+        </div>
 
-    <!-- Ajoute autant de compétences que nécessaire -->
-  </section>
-</main>
+        <!-- Compétence 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Compétence 6</button>
+          <div class="accordion-content">
+            <!-- Insère ici les AC liés à la compétence 6 -->
+            <p>[AC 6.1, AC 6.2, etc. - Ton texte justifiant chaque acquis]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<footer>
-  <p>&copy; 2025 - Mon Portfolio</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 - Mon Portfolio</p>
+  </footer>
+</div>
+
+<!-- Script JavaScript pour gérer l’accordéon -->
+<script src="js/accordion.js"></script>
 </body>
 </html>
