@@ -1,0 +1,174 @@
+/* style.css */
+
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ccc;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Sections générales */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Hero section (accueil) */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+}
+
+/* Cartes de projet */
+.projet-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.projet-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.projet-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* Compétences */
+.competences-section .competence-block {
+    border-left: 3px solid #000;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* CV */
+.cv-section {
+    margin-top: 2rem;
+}
+
+.cv-block {
+    margin-bottom: 2rem;
+}
+
+.cv-block h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+.cv-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.cv-left {
+    flex: 1 1 300px;
+    margin-right: 1rem;
+}
+
+.cv-right {
+    flex: 1 1 300px;
+}
+
+/* Contact */
+.contact-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-icons {
+    margin: 1rem 0;
+}
+
+.contact-icons a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.contact-icons a img:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
